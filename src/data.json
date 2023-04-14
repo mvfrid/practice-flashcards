@@ -1,0 +1,285 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the difference between == and === in JS?",
+        "answer": "In JavaScript, `==` is a loose equality operator that performs type coercion, allowing different data types to be compared without strict type checking. `===` is a strict equality operator that does not perform type coercion and requires both the value and the type to be identical. Use `==` for loose equality comparisons and `===` for strict equality comparisons in JavaScript."
+      },
+      {
+        "id": 2,
+        "question": "What is an async response?",
+        "answer": "An async response, or asynchronous response, is a communication pattern in computing where a request is made, but the response is not immediately received. Instead, the requester continues with other tasks or operations, and the response is delivered at a later time when it becomes available. This approach is often used in web development for asynchronous communication between clients (e.g., web browsers) and servers (e.g., web servers) using technologies like AJAX, Fetch API, or XMLHttpRequest. With async responses, the client can send requests to the server and continue executing other tasks without blocking the user interface or waiting for the response to arrive. "
+      },
+      {
+        "id": 3,
+        "question": "What does JSON stand for? What is it used for?",
+        "answer": "JSON stands for JavaScript Object Notation. It is a lightweight data-interchange format that is used for storing and exchanging data between a server and a client, or between different parts of a software application. JSON is commonly used in web development as a means of representing structured data in a human-readable and machine-readable format."
+      },
+      {
+        "id": 4,
+        "question": "How would you explain an API request?",
+        "answer": "An API request, or Application Programming Interface request, is a communication made by one software application (the client) to another (the server) to request specific data or perform a particular action. The client sends a request to the server using predefined rules and protocols, specifying the desired data or action. The server processes the request and sends a response back to the client, typically in a machine-readable format, such as JSON or XML. API requests are commonly used for integrating different software systems, allowing them to interact and exchange data in a standardized and controlled manner."
+      },
+      {
+        "id": 5,
+        "question": "What is a DOM?",
+        "answer": "DOM stands for Document Object Model. It is a programming interface for web documents, represented as a tree-like structure of objects that can be manipulated using programming languages like JavaScript. The DOM represents the structure, content, and properties of a web document, allowing developers to dynamically update and manipulate its elements, such as HTML elements, CSS styles, and more. The DOM is a key concept in web development for building interactive and dynamic web pages and web applications."
+      },
+      {
+        "id": 6,
+        "question": "In the context of CSS styling can you explain what does display-style: inline-block stand for?",
+        "answer": "The CSS property `display: inline-block` is used to define an element's display behavior in a web page. When applied to an HTML element, it causes the element to be displayed as an inline-level element, allowing other elements to flow alongside it, while also behaving like a block-level element in terms of its ability to have a defined width, height, padding, and margin. This makes `display: inline-block` useful for creating elements that are inline and block-like at the same time, allowing for more flexible and responsive layouts in CSS."
+      },
+      {
+        "id": 7,
+        "question": "What is SASS? What are the advantages of using it?",
+        "answer": "SASS (Syntactically Awesome Style Sheets) is a CSS preprocessor with advanced features like variables, nested rules, and mixins. It improves code organization, reduces repetition, allows for easy styling changes with variables, and offers support for scoping and organization with nested rules. SASS has a large community and tools for compiling SASS code into standard CSS."
+      },
+      {
+        "id": 8,
+        "question": "What is the difference between 'null' and 'undefined' in JavaScript? Provide examples where each would be used.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 9,
+        "question": "Explain the concept of event delegation in JavaScript and why it is useful in the context of performance optimization in event handling.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 10,
+        "question": "Describe the concept of `hoisting` in JavaScript and how it affects variable declarations and function declarations.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 11,
+        "question": "Explain the purpose and usage of closures in JavaScript. Provide an example where closures are used to achieve a specific behavior.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 12,
+        "question": "How would you optimize the performance of a web page that has a large number of images? Provide multiple approaches, including their pros and cons.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 13,
+        "question": "Describe the concept of `this` in JavaScript and how its value is determined in different contexts, such as in regular function calls, method calls, and event handlers.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 14,
+        "question": "Explain the concept of `prototype` in JavaScript and how it is used for inheritance.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 15,
+        "question": "What are the different ways to handle cross-origin resource sharing (CORS) in JavaScript, and what are the security implications of each approach?",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 16,
+        "question": "Describe the difference between 'let', 'const', and 'var' in JavaScript, including their scope, hoisting behavior, and use cases.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 17,
+        "question": "Describe the principles of functional programming and provide examples of functional programming concepts in JavaScript, such as higher-order functions, immutability, and pure functions.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 18,
+        "question": "How do you handle performance optimization in JavaScript? Discuss techniques such as debouncing, throttling, and memoization.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 19,
+        "question": "What are the different data types in JavaScript, and how do you determine the type of a variable or value?",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 20,
+        "question": "How do you declare and use a function in JavaScript? Provide examples of function declaration and function expression syntax.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 21,
+        "question": "How do you loop through an array in JavaScript? Provide examples of different types of loops, such as 'for', 'while', and 'forEach'.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 22,
+        "question": "Explain the concept of `callback functions` in JavaScript, and provide an example of how they are used in asynchronous programming.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 23,
+        "question": "How do you concatenate strings in JavaScript? Provide examples of different methods for string concatenation.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 24,
+        "question": "What is the difference between an array and an object in JavaScript? Provide examples of when you would use an array versus an object.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 24,
+        "question": "How do you find the length of an array in JavaScript?",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 25,
+        "question": "What are some common array manipulation methods, such as 'push', 'pop', 'shift', 'unshift', 'slice', and 'splice'? Provide examples of their usage.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 26,
+        "question": "Explain the concept of `mutability` and `immutability` in relation to arrays in JavaScript. Describe the implications of mutable arrays and how you can achieve immutability.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 27,
+        "question": "Describe the concept of `array destructuring` in JavaScript and how it can be used to extract values from arrays. Provide examples of array destructuring syntax and its applications.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 28,
+        "question": "How do you sort an array in JavaScript, and what are the differences between 'sort', 'reverse', and 'compare' methods? Provide examples of sorting arrays based on different criteria.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 29,
+        "question": "How do you clone an array in JavaScript, and what are the different methods for shallow and deep copying of arrays? Discuss their pros and cons.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 30,
+        "question": "Explain the concept of `multidimensional arrays` in JavaScript and how they can be used to represent and manipulate data in multiple dimensions. Provide examples of multidimensional arrays and their usage.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 31,
+        "question": "Describe the concept of `sparse arrays` in JavaScript and how they differ from regular arrays. Discuss their implications and potential issues.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 32,
+        "question": "What is Redux, and why is it used in JavaScript applications? Explain the basic principles of Redux, such as the store, actions, reducers, and the unidirectional data flow.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 33,
+        "question": "Describe the difference between `container components` and `presentational components` in Redux, and how they interact with the store and dispatch actions.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 34,
+        "question": "Explain the concept of `middleware` in Redux and how it is used to handle asynchronous actions, such as making API requests, logging, and handling side effects.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 35,
+        "question": "How do you connect a React component to Redux? Describe the usage of 'connect' function from 'react-redux' library, and how it maps the Redux state and actions to the component props.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 36,
+        "question": "Explain the concept of `selectors` in Redux, and how they are used to derive data from the Redux store efficiently. Discuss the benefits of using selectors in terms of performance and reusability.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 37,
+        "question": "Describe the concept of `immutability` in Redux and why it is important for managing the state. Discuss different approaches to update the state in a Redux store, such as spread operator, Object.assign, and libraries like Immutable.js.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 38,
+        "question": "Describe the benefits and limitations of using Redux in a JavaScript application. Discuss scenarios where Redux might be overkill or unnecessary, and when it is most useful and appropriate to use.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 39,
+        "question": "What is React, and why is it used in modern web development? Explain the key concepts of React, such as components, props, state, and the virtual DOM.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 40,
+        "question": "Describe the lifecycle methods in React and their usage in class components. Explain how they work, when they are called, and how they can be used to manage component behavior and optimize performance.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 41,
+        "question": "Explain the concept of `controlled components` and `uncontrolled components` in React, and their differences. Discuss their use cases and when to choose one over the other.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 42,
+        "question": "Describe the concept of `conditional rendering` in React and how it can be implemented using various techniques, such as if statements, ternary operators, and logical && operator.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 43,
+        "question": "Explain the concept of `props` in React and how they are used to pass data between components. Discuss best practices for using props, such as prop types, default props, and destructuring.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 44,
+        "question": "Describe the concept of `state` in React and how it is used to manage component data. Discuss the usage of setState method, state initialization, and handling state updates in asynchronous scenarios.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 45,
+        "question": "Describe the benefits and limitations of using React in web development. Discuss scenarios where React might be the best fit and when other libraries or frameworks may be more suitable.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 46,
+        "question": "Explain what JSX is in React and why it is used. Discuss the advantages of using JSX over plain JavaScript or other templating languages, and how JSX is converted into JavaScript by the React compiler.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 47,
+        "question": "Explain when you might need to use preventDefault() and why?",
+        "answer": "preventDefault() is used in JavaScript to prevent the default behavior of an event, such as a form submission or a link click, from occurring in a web browser. This can be useful in cases where you want to override the default behavior and implement custom logic, such as form validation or handling AJAX requests, without the page refreshing or navigating to a new URL."
+      },
+      {
+        "id": 48,
+        "question": "Describe the concept of `fragments` in React and their usage in JSX. Discuss how fragments can be used to group multiple elements without introducing extra nodes in the DOM.",
+        "answer": "In React, fragments are a way to group multiple elements together without introducing extra nodes in the DOM. They allow you to return multiple elements from a component without wrapping them in a parent element. This can help improve the structure of your JSX code and avoid unnecessary HTML elements in the rendered output. Fragments are typically used when you need to return a list of elements or when you have multiple sibling elements that need to be rendered together without a common parent element. They are denoted using a shorthand syntax <></> or with the explicit <React.Fragment></React.Fragment> syntax."
+      },
+      {
+        "id": 49,
+        "question": "Describe the useEffect hook in React and how it is used for side effects, such as fetching data, subscribing to events, or updating the DOM. Discuss the dependencies array, cleanup function, and common pitfalls with useEffect.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 50,
+        "question": "What is React Hooks?",
+        "answer": "With React Hooks, we can isolate stateful logic and side-effects from a functional component. Hooks are JavaScript functions that manage the state's behaviour and side effects by isolating them from a component."
+      },
+      {
+        "id": 51,
+        "question": "Explain how to manage component state with the useState hook in React. Discuss the usage of useState to declare and update state variables, and how to handle complex state objects and arrays.",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 52,
+        "question": "What is the difference between a stateless and stateful component in React?",
+        "answer": "A stateful component declares and manages local state in it. A stateless component is a pure function that doesn't have a local state and side-effects to manage."
+      },
+      {
+        "id": 53,
+        "question": "What is CSS grid and CSS flexbox? When could be a good time to use them respectively or combined?",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 54,
+        "question": "What is internet?",
+        "answer": "Not finished.."
+      },
+      {
+        "id": 55,
+        "question": "Not finished..",
+        "answer": "Not finished.."
+      }
+    ]
+  }
+  
