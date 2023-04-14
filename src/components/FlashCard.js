@@ -90,7 +90,7 @@ const FlashCard = ({ question, answer }) => {
     cardElement.classList.add('animate');
     setTimeout(() => {
       cardElement.classList.remove('animate');
-    }, 500); // Duration of the animation in milliseconds
+    }, 400); // Duration of the animation in milliseconds
   };
 
   // Function to go back to showing question
@@ -101,7 +101,7 @@ const FlashCard = ({ question, answer }) => {
     cardElement.classList.add('animate-reverse');
     setTimeout(() => {
       cardElement.classList.remove('animate-reverse');
-    }, 500); // Duration of the animation in milliseconds
+    }, 400); // Duration of the animation in milliseconds
   };
 
   return (
