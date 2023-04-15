@@ -8,7 +8,7 @@ const StyledHeader = styled.div`
   padding: 1.2rem;
   width: 100%;
   height: 120px;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 `;

@@ -38,6 +38,7 @@ const StyledCard = styled.div`
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
+  margin: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   @media (max-width: 667px) {
     min-width: 200px;

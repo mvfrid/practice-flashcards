@@ -10,9 +10,10 @@ const StyledMain = styled.div`
   align-items: center;
   position: relative;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  padding: 135px 25px;
+  padding: 50px 25px;
 `;
 
 const Main = (props) => {
