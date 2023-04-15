@@ -13,7 +13,10 @@ const StyledMain = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 50px 25px;
+  padding: 70px 25px;
+  @media (max-width: 667px) {
+    padding: 20px 10px;
+  }
 `;
 
 const Main = (props) => {

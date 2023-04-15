@@ -5,7 +5,7 @@ import { StyledAnswerButton } from './styled_components/buttons.js';
 
 const StyledFooter = styled.div`
   background-color: #2a1452;
-  margin: auto;
+  margin-top: 1rem;
   padding: 1rem;
   width: 100%;
   height: 120px;

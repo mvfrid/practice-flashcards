@@ -41,6 +41,8 @@ const StyledCard = styled.div`
   margin: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   @media (max-width: 667px) {
+    margin: .8rem;
+    padding: .5rem;
     min-width: 200px;
     min-height: 300px;
   }
@@ -73,6 +75,7 @@ const StyledP = styled.p`
   font-size: 18px;
   color: "black";
   margin-bottom: 20px;
+  text-align: left;
   backface-visibility: hidden;
   @media (max-width: 667px) {
     font-size: 16px;
