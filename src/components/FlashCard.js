@@ -42,7 +42,7 @@ const StyledCard = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   @media (max-width: 667px) {
     margin: .8rem;
-    padding: .5rem;
+    padding: 1.2rem;
     min-width: 200px;
     min-height: 300px;
   }
