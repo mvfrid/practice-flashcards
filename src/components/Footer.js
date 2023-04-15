@@ -16,12 +16,18 @@ const StyledFooter = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
+  @media (max-width: 667px) {
+    height: 90px;
+  }
 `;
 
 const StyledLink = styled.span`
   color: white;
   align-self: flex-start;
+  @media (max-width: 667px) {
+    font-size: 14px;
+  }
 `;
 
 const Footer = ({ generateRandomNumber }) => {
