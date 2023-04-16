@@ -284,15 +284,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, 'let' and 'const' are block-scoped variables introduced in ES6, while 'var' is a function-scoped variable. Using 'var' is no longer considered good practice."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": " 'let' and 'var' can be re-assigned, while 'const' is a constant that cannot be re-assigned. 'let' and 'var' are hoisted, meaning they can be accessed before declaration, but with different behaviors. 'let' is not accessible until declaration, while 'var' is accessible but undefined."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "'const' variables must be initialized at declaration. 'let' is commonly used for variables that may be re-assigned, 'const' for immutable values, and 'var' is less commonly used due to its hoisting behavior and function-scoped nature."
           }
         ]
       },
@@ -702,15 +702,19 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Benefits of using Redux in a JavaScript application: Centralized state management, Predictable state updates, Scalability and reusability, Debugging and time-traveling."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Limitations of using Redux: Learning curve, Boilerplate code, Overkill for small applications."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Redux is most useful and appropriate in scenarios where the application has complex and/or shared state that needs to be managed in a centralized manner, when it has multiple components that need to share and synchronize state or when it needs to handle asynchronous data flow, such as API calls. "
+          },
+          {
+            "page": "page4",
+            "content": "Avoid when the application has simple state management needs that can be easily handled by local state management (e.g., useState in React)."
           }
         ]
       },
@@ -720,15 +724,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "React is a popular JavaScript library used in modern web development for building user interfaces. It allows developers to create reusable UI components, manage component data with props and state, and efficiently update the DOM using a virtual DOM."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Key concepts of React include: Components, Props, State and Virtual DOM."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "React's modular approach, performance optimizations, and developer-friendly features have made it a popular choice for building interactive and responsive user interfaces in modern web development."
           }
         ]
       },
@@ -738,15 +742,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "React class components have several lifecycle methods that are used to manage component behavior and optimize performance. These include componentDidMount, componentDidUpdate, and componentWillUnmount. "
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "componentDidMount is called after the component is rendered and can be used for tasks such as fetching data. componentDidUpdate is called after a component is updated and is useful for handling changes in state or props. componentWillUnmount is called before a component is removed from the DOM and can be used for cleanup tasks. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "These lifecycle methods allow for managing component behavior at different stages of the component's lifecycle and optimizing performance by performing tasks efficiently."
           }
         ]
       },
@@ -756,15 +760,19 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In React, controlled components and uncontrolled components refer to different approaches for managing form data in components."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Controlled components: These are components in which form data is managed by the component itself, with the component state serving as the single source of truth. The value of the form input elements is set and updated by the component's state, and form changes are handled through event handlers, allowing for precise control and validation."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Uncontrolled components: These are components in which form data is managed by the DOM, and the component does not maintain its state. The value of the form input elements is managed by the DOM, and form changes are accessed through refs or event handlers, allowing for less control and validation."
+          },
+          {
+            "page": "page4",
+            "content": "When to choose: Choose controlled components when you need more control over form data and want to ensure consistency and predictability. Choose uncontrolled components when you need a simpler approach and don't require extensive validation or control over form data."
           }
         ]
       },
@@ -774,15 +782,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Conditional rendering in React refers to the ability to render different content or components based on certain conditions. It allows components to dynamically display different UI elements based on the state or props of the component."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Conditional rendering can be achieved using various techniques, such as if statements, ternary operators, and logical && operator."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "These techniques provide flexibility in determining what content or components should be rendered based on the current state or props of the component, allowing for dynamic and interactive user interfaces in React applications."
           }
         ]
       },
@@ -792,15 +800,11 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In React, props (short for properties) are used to pass data from a parent component to its child component. Props are read-only and immutable, and they allow data to flow down the component tree. Components receive props as parameters and use them to render dynamic content.  "
           },
           {
             "page": "page2",
-            "content": ""
-          },
-          {
-            "page": "page3",
-            "content": ""
+            "content": "Best practices for using props in React include defining prop types using PropTypes to ensure data integrity, setting default props for optional data, and destructuring props to simplify code and improve readability. These practices help ensure proper data handling, maintainability, and reusability of components in a React application."
           }
         ]
       },
@@ -810,15 +814,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In React, state is a JavaScript object that holds data specific to a component and determines how the component behaves and renders. Components can have their own local state, which can be updated over time."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "The setState method is used to update the state in React components. State is initialized in the constructor or using class properties in class components, and with the useState hook in functional components. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Asynchronous updates to state can lead to issues, so React provides a callback function as the second argument to setState or a functional update pattern to handle asynchronous state updates safely."
           }
         ]
       },
@@ -996,7 +1000,119 @@
       },
       {
         "id": 55,
-        "question": "Not finished..",
+        "question": "Explain what happens when someone types in `https://google.com` in their browser.",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "When you type `https://google.com` in your browser, the browser attempts to connect to the `google.com` domain using the HTTPS protocol, which encrypts data for secure communication."
+          },
+          {
+            "page": "page2",
+            "content": "The browser sends a request to the web server hosting google.com, and if successful, the server responds with the requested web page. The browser then renders the web page, allowing you to interact with it, search, and access various services provided by Google. "
+          },
+          {
+            "page": "page3",
+            "content": "The process involves DNS resolution, establishing a secure connection, HTTP request and response, and rendering of the web page for display in your browser."
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "question": "What is sustainable software development? How can you as a developer contribute?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "Sustainable software, also known as sustainable code or eco-friendly code, refers to software development practices that prioritize environmental sustainability and reduce the negative impact of software on the environment."
+          },
+          {
+            "page": "page2",
+            "content": "Just as sustainability principles can be applied to other areas of life, such as energy consumption, waste reduction, and resource conservation, sustainability can also be integrated into software development to create software that is environmentally responsible and sustainable in the long term."
+          },
+          {
+            "page": "page3",
+            "content": "Sustainable software can be achieved through various practices, including: Energy-efficient coding, Resource-conscious development, Minimizing software waste, Long-term maintainability, Collaborative and open-source development, Ethical data handling."
+          },
+          {
+            "page": "page3",
+            "content": "Search the web for a deep dive into these practices."
+          }
+        ]
+      },
+      {
+        "id": 57,
+        "question": "What is Virtual DOM?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "The virtual DOM is a lightweight, in-memory representation of the actual DOM (Document Object Model) in React. It is a JavaScript object that mirrors the structure of the actual DOM and holds the state and properties of the components in a React application. "
+          },
+          {
+            "page": "page2",
+            "content": "When a component's state or props change, React uses the virtual DOM to efficiently update only the necessary parts of the UI, instead of re-rendering the entire DOM. "
+          },
+          {
+            "page": "page3",
+            "content": "This helps improve performance by reducing the number of actual DOM manipulations and making UI updates faster and more efficient."
+          }
+        ]
+      },
+      {
+        "id": 58,
+        "question": "Object-oriented programming (OOP), what is it and when is it used?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "Object-oriented programming (OOP) is a programming paradigm that uses objects as the fundamental building blocks for creating software."
+          },
+          {
+            "page": "page2",
+            "content": "It is a way of organizing code and data into self-contained objects that encapsulate behavior (methods) and data (attributes) related to a specific entity or concept."
+          },
+          {
+            "page": "page3",
+            "content": "OOP is used when developers want to create complex systems with reusable and modular code, improve code maintainability, and achieve better code organization and abstraction. OOP is widely used in software development for building applications ranging from desktop software to web applications, mobile apps, and more."
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "question": "What is Git?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "Git is a distributed version control system that allows software developers to track changes to their code over time. It enables multiple developers to work on the same codebase simultaneously, merging their changes together. "
+          },
+          {
+            "page": "page2",
+            "content": "Git provides features such as branching, merging, and conflict resolution, making it easy to collaborate, revert changes, and maintain a history of code changes. It is widely used in software development to improve team collaboration, versioning, and code management."
+          },
+          {
+            "page": "page3",
+            "content": "Git and GitHub are related but distinct entities. GitHub is a web-based hosting service for Git repositories. It provides a remote location where developers can store and share their Git repositories in the cloud. Git is the tool, while GitHub is a platform. "
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "question": "What is DevOps and CI/CD?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "DevOps is an approach that emphasizes collaboration, automation, and feedback between development and operations teams to streamline software delivery. CI/CD (Continuous Integration/Continuous Delivery or Deployment) are practices within DevOps."
+          },
+          {
+            "page": "page2",
+            "content": "CI involves regularly integrating code changes, while CD focuses on automatically delivering or deploying tested code changes to production. DevOps aims to improve software development and operations workflows, while CI/CD are specific practices for achieving faster and more reliable software delivery."
+          },
+          {
+            "page": "page3",
+            "content": "As a developer, it is likely that you will work with these practices and tools, depending on the organization and project you are involved in. DevOps has become a widely adopted approach in modern software development, with many organizations incorporating DevOps practices to improve collaboration, streamline workflows, and deliver software faster and more reliably."
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "question": "More questions to be added..",
         "answer": [
           {
             "page": "page1",
@@ -1009,6 +1125,70 @@
           {
             "page": "page3",
             "content": ""
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "question": "Can you name one or more naming convention commonly used in computer programming?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "It's important to follow the naming conventions consistently within a project or codebase to improve code readability and maintainability. Different programming languages and coding styles may have their own conventions for naming variables, so it's a good practice to adhere to the conventions of the specific language or coding style being used."
+          },
+          {
+            "page": "page2",
+            "content": "Some examples: CamelCase, PascalCase, snake_case and kebab-case."
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "question": "What are pseudo-classes and pseudo-elements in CSS, and how are they used?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "Pseudo-classes and pseudo-elements in CSS are used to select and style specific elements based on their state, position, or content, without the need to add additional markup or classes to the HTML. They provide additional flexibility and control in styling web elements, enhancing the visual presentation and interactivity of web pages."
+          },
+          {
+            "page": "page2",
+            "content": "Pseudo-classes are used to select elements based on their state, such as :hover for styling when an element is being hovered over by the user."
+          },
+          {
+            "page": "page3",
+            "content": "Pseudo-elements, on the other hand, are used to style a part of an element's content, such as ::before and ::after to insert content before and after an element."
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "question": "What are media queries in CSS and how are they used for responsive web design?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "Media queries in CSS are used to apply different styles to elements based on the characteristics of the device or viewport used to view a web page. Media queries allow developers to create responsive web designs that adapt to different screen sizes, devices, and orientations. "
+          },
+          {
+            "page": "page2",
+            "content": "They are typically used in conjunction with CSS rules to conditionally apply styles based on criteria such as screen width, height, device type, resolution, and more. "
+          },
+          {
+            "page": "page3",
+            "content": "Media queries help ensure that web pages are visually appealing and functional across various devices, providing optimal user experiences on different screen sizes, from desktops to mobile devices."
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "question": "Explain the concept of CSS inheritance and how it affects the styling of elements.",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "CSS inheritance is the ability of certain CSS properties to be passed from parent elements to their child elements. When a property is set on a parent element, the child elements within it will inherit that property value by default, unless overridden by a more specific value. This allows for cascading styles across elements in a document tree. "
+          },
+          {
+            "page": "page2",
+            "content": "For example, if a font size is set on a parent element, its child elements will inherit the same font size unless a different font size is explicitly set on the child element. This can simplify and streamline the application of styles in CSS."
           }
         ]
       }
