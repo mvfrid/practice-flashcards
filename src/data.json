@@ -428,15 +428,19 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, an array is a built-in data structure that stores values in a sequential manner with numeric indices, starting from 0. Arrays are used when you need to store a collection of values in a specific order and perform operations on them, such as iteration, sorting, or filtering."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "On the other hand, an object is a key-value pair collection where values are accessed using keys (strings). Objects are used when you need to store data with associated properties or when you need to represent complex data structures with custom keys."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Examples of when to use an array: Storing a list of items (such as an array of numbers, strings, or objects), Managing a queue or stack data structure, Storing multiple values that need to be iterated or sorted."
+          },
+          {
+            "page": "page4",
+            "content": "Examples of when to use an object: Representing a user profile (with properties like name, age, and address), Storing configuration settings with keys like `username` and `password`, Managing a dictionary or lookup table with custom keys for quick data retrieval."
           }
         ]
       },
@@ -572,15 +576,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Sparse arrays in JavaScript are arrays that have gaps or undefined values at certain indices. Unlike regular arrays, which are dense and have consecutive indices, sparse arrays can have non-consecutive or skipped indices. This can result in arrays with uneven lengths and unexpected behavior in some cases. "
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Implications of sparse arrays include potentially inefficient memory usage, as JavaScript engines may optimize regular arrays differently from sparse arrays. Accessing sparse array elements may also produce unexpected results, as skipped indices will return undefined."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Care must be taken when using sparse arrays to avoid unintended behavior and potential issues with array operations, such as iteration or length calculation."
           }
         ]
       },
@@ -832,7 +836,7 @@
           },
           {
             "page": "page3",
-            "content": "React may be the best fit for scenarios where a highly interactive UI with frequent updates is needed, and where code reusability and maintainability are priorities. For simple or static websites, other libraries or frameworks may be more suitable. React can be combined with other libraries or frameworks, such as Redux for state management or Next.js for server-side rendering, to build more complex applications."
+            "content": "React may be the best fit for scenarios where a highly interactive UI with frequent updates is needed, and where code reusability and maintainability are priorities. For simple or static websites, other libraries or frameworks may be more suitable."
           }
         ]
       },
@@ -960,14 +964,18 @@
         "answer": [
           {
             "page": "page1",
-            "content": "CSS Grid is a two-dimensional layout system that allows you to create complex grids with rows and columns, making it ideal for creating overall page layouts. CSS Flexbox is a one-dimensional layout system that focuses on distributing items along a single axis, making it great for creating flexible and dynamic components."
+            "content": "CSS Grid is a two-dimensional layout system that allows you to create complex grids with rows and columns, making it ideal for creating overall page layouts."
           },
           {
             "page": "page2",
-            "content": "A good time to use CSS Grid can be when you need to create a grid-based layout with multiple rows and columns, while CSS Flexbox is handy for creating flexible components like navigation menus or lists. "
+            "content": "CSS Flexbox is a one-dimensional layout system that focuses on distributing items along a single axis, making it great for creating flexible and dynamic components. "
           },
           {
             "page": "page3",
+            "content": "A good time to use CSS Grid can be when you need to create a grid-based layout with multiple rows and columns, while CSS Flexbox is handy for creating flexible components like navigation menus or lists."
+          },
+          {
+            "page": "page4",
             "content": "They can also be combined for more advanced layouts, with CSS Grid defining the overall structure and Flexbox handling item distribution within the grid cells."
           }
         ]
