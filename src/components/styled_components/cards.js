@@ -70,6 +70,7 @@ export const StyledP = styled.p`
   font-size: 18px;
   color: "black";
   margin-bottom: 20px;
+  text-align: left;
   backface-visibility: hidden;
   @media (max-width: 667px) {
     font-size: 16px;
