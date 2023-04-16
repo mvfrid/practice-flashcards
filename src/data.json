@@ -824,15 +824,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Benefits of using React in web development include: Efficient UI updates with virtual DOM (leading to improved performance), Reusable UI components that promote code reusability and maintainability, Strong community support and extensive ecosystem of tools and libraries."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Limitations of React include: Steeper learning curve for beginners, Requires additional tools for full-fledged development (e.g., bundlers, compilers), Focused on the view layer, requiring additional libraries or frameworks for complete application development."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "React may be the best fit for scenarios where a highly interactive UI with frequent updates is needed, and where code reusability and maintainability are priorities. For simple or static websites, other libraries or frameworks may be more suitable. React can be combined with other libraries or frameworks, such as Redux for state management or Next.js for server-side rendering, to build more complex applications."
           }
         ]
       },
@@ -842,15 +842,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "JSX is a syntax extension in React that allows developers to write HTML-like code directly in JavaScript for defining UI components. JSX is used in React to create reusable UI components and define their structure, appearance, and behavior."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "JSX is converted into JavaScript by the React compiler during the build process. It is transformed into React.createElement() calls, which return plain JavaScript objects representing the UI components, allowing React to efficiently update the DOM when changes occur."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Advantages of JSX over plain JavaScript or other templating languages include improved readability, reusability, and maintainability. "
           }
         ]
       },
@@ -888,15 +888,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "The useEffect hook in React is used to handle side effects, such as fetching data, subscribing to events, or updating the DOM, in functional components. "
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "It takes two arguments: a function that contains the side effect logic, and an array of dependencies that triggers the effect when changed. The effect runs after rendering and on subsequent updates."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Effects can be used to manage resources, handle subscriptions, and perform cleanup. To prevent memory leaks, it's important to clean up any resources created in the effect. The useEffect hook enables developers to encapsulate side effects in functional components, making them more modular and easier to maintain."
           }
         ]
       },
@@ -906,15 +906,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "With React Hooks, we can isolate stateful logic and side-effects from a functional component. Hooks are JavaScript functions that manage the state's behaviour and side effects by isolating them from a component."
+            "content": "In short: With React Hooks, we can isolate stateful logic and side-effects from a functional component. Hooks are JavaScript functions that manage the state's behaviour and side effects by isolating them from a component."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "React Hooks are a set of functions introduced in React version 16.8 that allow developers to add state and lifecycle features to functional components. Hooks provide a way to manage state, handle side effects, and access React features without using class components. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Hooks are used to add and manage state in functional components, making them more concise and easier to understand. Examples of hooks include useState for managing local state, useEffect for handling side effects, and useContext for accessing context in functional components. React Hooks have become widely adopted and are considered a best practice for state management in modern React applications."
           }
         ]
       },
@@ -924,15 +924,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In React, the useState hook is used to manage component state. It is a function that returns an array with two values: the current state value and a function to update that state value. The initial state value is provided as an argument to useState."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "To manage state, you can destructure the array to access the current state value and the state update function. You can then use the state value in your component, and when you want to update it, call the state update function, which will trigger a re-render with the updated state value. This allows for managing and manipulating local state within a functional component in React."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Search the web to find use cases, hands-on examples and discussions."
           }
         ]
       },
@@ -942,15 +942,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "A stateful component declares and manages local state in it. A stateless component is a pure function that doesn't have a local state and side-effects to manage."
+            "content": "In short: A stateful component declares and manages local state in it. A stateless component is a pure function that doesn't have a local state and side-effects to manage."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "A stateless component, also known as a functional component, is a simple function that receives props as input and returns UI elements. It doesn't manage any internal state and relies entirely on its props."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "A stateful component, also known as a class component, is a more complex JavaScript class that extends React.Component. It has its own internal state managed using this.state, and can handle lifecycle methods and manage state changes. However, with the introduction of hooks in React 16.8, functional components with hooks are now recommended for most use cases, making class components less commonly used."
           }
         ]
       },
@@ -960,15 +960,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "CSS Grid is a two-dimensional layout system that allows you to create complex grids with rows and columns, making it ideal for creating overall page layouts. CSS Flexbox is a one-dimensional layout system that focuses on distributing items along a single axis, making it great for creating flexible and dynamic components."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "A good time to use CSS Grid can be when you need to create a grid-based layout with multiple rows and columns, while CSS Flexbox is handy for creating flexible components like navigation menus or lists. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "They can also be combined for more advanced layouts, with CSS Grid defining the overall structure and Flexbox handling item distribution within the grid cells."
           }
         ]
       },
@@ -978,15 +978,11 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "The internet is a global network of interconnected computers that communicate using a standardized set of protocols, enabling the exchange of information and data across vast distances."
           },
           {
             "page": "page2",
-            "content": ""
-          },
-          {
-            "page": "page3",
-            "content": ""
+            "content": "It allows for the sharing of resources, such as websites, email, files, and multimedia, and facilitates communication and collaboration among individuals and organizations worldwide."
           }
         ]
       },
