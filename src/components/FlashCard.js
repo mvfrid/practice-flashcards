@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import FlashCardQuestion from './FlashCardQuestion.js';
-import FlashCardAnswer from './FlashCardAnswer.js';
+import { StyledAnswerButton } from './styled_components/buttons.js';
+import { StyledCard, StyledH2, StyledH3, StyledP } from './styled_components/cards.js';
 
 const FlashCard = ({ question, answer }) => {
   const [showAnswer, setShowAnswer] = useState(false); // State for showing answer
@@ -31,18 +31,31 @@ const FlashCard = ({ question, answer }) => {
   return (
     <>
       {showQuestion && (
-        <FlashCardQuestion
-          id="flashcardQ"
-          question={question}
-          toggleAnswer={toggleAnswer}
-          showQuestion={showQuestion} />
+        <div className="Question">
+          <StyledCard showQuestion={showQuestion} id="flashcardQ" className={showQuestion ? 'animate' : 'animate-reverse'}>
+            <StyledH2>Question</StyledH2>
+            <StyledH3>{question}</StyledH3>
+            <StyledAnswerButton type="button" onClick={toggleAnswer}>
+              See answer
+            </StyledAnswerButton>
+          </StyledCard>
+        </div>
       )}
       {showAnswer && (
-        <FlashCardAnswer
-          id="flashcardA"
-          answer={answer}
-          goBackToQuestion={goBackToQuestion}
-          showAnswer={showAnswer} />
+        <div className="Answer">
+          <StyledCard showAnswer={showAnswer} id="flashcardA" className={showAnswer ? 'animate' : 'animate-reverse'}>
+            <StyledH2>Answer</StyledH2>
+            {answer.map((item) => (
+              <StyledP key={item.page}>{item.content}</StyledP>
+            ))}
+            <StyledAnswerButton
+              type="button"
+              onClick={goBackToQuestion}
+              style={{ margin: '10px' }}>
+        See question
+            </StyledAnswerButton>
+          </StyledCard>
+        </div>
       )}
     </>
   );

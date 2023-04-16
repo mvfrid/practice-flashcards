@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FlashCard from './FlashCards/FlashCard';
+import FlashCard from './FlashCard';
 
 const StyledMain = styled.div`
   background-color: transparent;

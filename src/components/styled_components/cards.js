@@ -2,19 +2,19 @@ import styled, { keyframes } from 'styled-components';
 
 const flipVerticalRight = keyframes`
   0% {
-    transform: rotateY(0);
+    transform: rotateY(180deg);
   }
   100% {
-    transform: rotateY(180deg);
+    transform: rotateY(0);
   }
 `;
 
 const flipVerticalLeft = keyframes`
   0% {
-    transform: rotateY(180deg);
+    transform: rotateY(0);
   }
   100% {
-    transform: rotateY(0);
+    transform: rotateY(180deg);
   }
 `;
 
