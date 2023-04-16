@@ -216,15 +216,11 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "This is more of a discussion question. I recommend searching the web for examples and use cases. Some keywords to search for are:"
           },
           {
             "page": "page2",
-            "content": ""
-          },
-          {
-            "page": "page3",
-            "content": ""
+            "content": "Image compression, Responsive Images, Content Delivery Network (CDN), Lazy Loading, Image Caching, Image Formats, Image Optimization Tools, Porgressive Loading, Minimize Image Requests, Image Sprites."
           }
         ]
       },
@@ -234,15 +230,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, this refers to the current execution context, which can vary depending on how a function is invoked."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "In regular function calls, this typically refers to the global object (e.g., window in a browser). In method calls, this refers to the object that the method is called on. In event handlers, this usually refers to the DOM element that triggered the event."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "In regular function calls, this typically refers to the global object (e.g., window in a browser). In method calls, this refers to the object that the method is called on. In event handlers, this usually refers to the DOM element that triggered the event."
           }
         ]
       },
@@ -252,15 +248,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, prototype is an object associated with every function, which allows for prototypal inheritance. It acts as a blueprint for creating new objects with shared properties and methods."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Objects created from a function constructor automatically inherit properties and methods from the constructor's prototype object. Modifying the prototype object of a constructor affects all objects created from that constructor. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "This allows for efficient sharing of common properties and methods among objects, reducing memory usage and promoting code reusability. prototype is a key mechanism in JavaScript for implementing inheritance and object-oriented programming concepts."
           }
         ]
       },
