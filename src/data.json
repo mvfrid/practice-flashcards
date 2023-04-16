@@ -860,15 +860,11 @@
         "answer": [
           {
             "page": "page1",
-            "content": "preventDefault() is used in JavaScript to prevent the default behavior of an event, such as a form submission or a link click, from occurring in a web browser. This can be useful in cases where you want to override the default behavior and implement custom logic, such as form validation or handling AJAX requests, without the page refreshing or navigating to a new URL."
+            "content": "PreventDefault() is used in JavaScript to prevent the default behavior of an event, such as a form submission or a link click, from occurring in a web browser."
           },
           {
             "page": "page2",
-            "content": ""
-          },
-          {
-            "page": "page3",
-            "content": ""
+            "content": "This can be useful in cases where you want to override the default behavior and implement custom logic, such as form validation or handling AJAX requests, without the page refreshing or navigating to a new URL."
           }
         ]
       },
@@ -883,10 +879,6 @@
           {
             "page": "page2",
             "content": "Fragments are typically used when you need to return a list of elements or when you have multiple sibling elements that need to be rendered together without a common parent element. They are denoted using a shorthand syntax <></> or with the explicit <React.Fragment></React.Fragment> syntax."
-          },
-          {
-            "page": "page3",
-            "content": ""
           }
         ]
       },
