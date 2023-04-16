@@ -16,12 +16,16 @@ const StyledMain = styled.div`
   padding: 50px 25px;
 `;
 
-const Main = (props) => {
+const Main = ({ showQuestion, setShowQuestion, randomQuestion, showAnswer, setShowAnswer }) => {
   return (
     <StyledMain>
       <FlashCard
-        answer={props.randomQuestion.answer}
-        question={props.randomQuestion.question} />
+        showQuestion={showQuestion}
+        setShowQuestion={setShowQuestion}
+        showAnswer={showAnswer}
+        setShowAnswer={setShowAnswer}
+        answer={randomQuestion.answer}
+        question={randomQuestion.question} />
     </StyledMain>
   );
 };

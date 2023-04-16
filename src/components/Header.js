@@ -31,8 +31,6 @@ const StyledHeading = styled.h1`
 const Header = ({ generateRandomNumber }) => {
   const handleNextQuestion = () => {
     generateRandomNumber(); // call the generateRandomNumber function when the button is clicked
-    // Can we change showQuestion to true and pass it to FlashCard component here?
-    // In order to always show Question again when we click Next.
   };
   return (
     <StyledHeader>
