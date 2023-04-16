@@ -123,7 +123,20 @@
       {
         "id": 7,
         "question": "What is SASS? What are the advantages of using it?",
-        "answer": "SASS (Syntactically Awesome Style Sheets) is a CSS preprocessor with advanced features like variables, nested rules, and mixins. It improves code organization, reduces repetition, allows for easy styling changes with variables, and offers support for scoping and organization with nested rules. SASS has a large community and tools for compiling SASS code into standard CSS."
+        "answer": [
+          {
+            "page": "page1",
+            "content": "SASS (Syntactically Awesome Style Sheets) is a CSS preprocessor with advanced features like variables, nested rules, and mixins."
+          },
+          {
+            "page": "page2",
+            "content": "It improves code organization, reduces repetition, allows for easy styling changes with variables, and offers support for scoping and organization with nested rules. "
+          },
+          {
+            "page": "page3",
+            "content": "SASS has a large community and tools for compiling SASS code into standard CSS."
+          }
+        ]
       },
       {
         "id": 8,
@@ -131,15 +144,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, null and undefined are two different special values that represent the absence of a value, but they are used in slightly different contexts."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Null is a value that represents the intentional absence of any object value. It is often used to explicitly indicate that a variable or property should have no value assigned to it."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Undefined is a value that represents the absence of a value or the uninitialized state of a variable. It is often used as the default value of a variable or function parameter that has not been assigned a value."
           }
         ]
       },
@@ -149,15 +162,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Event delegation is a technique in JavaScript where instead of attaching an event listener to each individual element, a single event listener is attached to a parent element that captures events on its children. "
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "This is useful for performance optimization because it reduces the number of event listeners and can improve performance in scenarios where there are a large number of elements with similar event handling requirements."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "With event delegation, events can be handled efficiently on a parent element, avoiding the need for repetitive event listeners on multiple child elements, leading to optimized event handling and improved performance."
           }
         ]
       },
@@ -167,15 +180,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Hoisting in JavaScript is the mechanism where variable declarations and function declarations are moved to the top of their scope during compilation, allowing them to be accessed before they are actually declared in the code."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Variable declarations using var are hoisted but not initialized, resulting in undefined until they are assigned a value. Function declarations are hoisted in their entirety, including the name and body, allowing them to be called before their declaration."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "However, hoisting does not apply to let or const variable declarations, and it's best to declare variables and functions before using them to avoid potential issues."
           }
         ]
       },
@@ -185,15 +198,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Closures in JavaScript are a powerful feature that allow inner functions to access and retain the scope of their outer enclosing function, even after the outer function has returned. "
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Closures are created when a nested function references variables from its containing function's scope. They are commonly used to create private variables, encapsulate data, and achieve specific behaviors such as maintaining state or creating reusable functions with different configurations."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Search the web for examples and use cases."
           }
         ]
       },
