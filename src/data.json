@@ -3,32 +3,122 @@
       {
         "id": 1,
         "question": "What is the difference between == and === in JS?",
-        "answer": "In JavaScript, `==` is a loose equality operator that performs type coercion, allowing different data types to be compared without strict type checking. `===` is a strict equality operator that does not perform type coercion and requires both the value and the type to be identical. Use `==` for loose equality comparisons and `===` for strict equality comparisons in JavaScript."
+        "answer": [
+          {
+            "page": "page1",
+            "content": "In JavaScript, `==` is a loose equality operator that performs type coercion, allowing different data types to be compared without strict type checking."
+          },
+          {
+            "page": "page2",
+            "content": "`===` is a strict equality operator that does not perform type coercion and requires both the value and the type to be identical."
+          },
+          {
+            "page": "page3",
+            "content": "Use `==` for loose equality comparisons and `===` for strict equality comparisons in JavaScript."
+          }
+        ]
       },
       {
         "id": 2,
         "question": "What is an async response?",
-        "answer": "An async response, or asynchronous response, is a communication pattern in computing where a request is made, but the response is not immediately received. Instead, the requester continues with other tasks or operations, and the response is delivered at a later time when it becomes available. This approach is often used in web development for asynchronous communication between clients (e.g., web browsers) and servers (e.g., web servers) using technologies like AJAX, Fetch API, or XMLHttpRequest. With async responses, the client can send requests to the server and continue executing other tasks without blocking the user interface or waiting for the response to arrive. "
+        "answer": [
+          {
+            "page": "page1",
+            "content": "An async response, or asynchronous response, is a communication pattern in computing where a request is made, but the response is not immediately received."
+          },
+          {
+            "page": "page2",
+            "content": "Instead, the requester continues with other tasks or operations, and the response is delivered at a later time when it becomes available."
+          },
+          {
+            "page": "page3",
+            "content": "This approach is often used in web development for asynchronous communication between clients (e.g., web browsers) and servers (e.g., web servers) using technologies like AJAX, Fetch API, or XMLHttpRequest."
+          },
+          {
+            "page": "page4",
+            "content": "With async responses, the client can send requests to the server and continue executing other tasks without blocking the user interface or waiting for the response to arrive."
+          }
+        ]
       },
       {
         "id": 3,
         "question": "What does JSON stand for? What is it used for?",
-        "answer": "JSON stands for JavaScript Object Notation. It is a lightweight data-interchange format that is used for storing and exchanging data between a server and a client, or between different parts of a software application. JSON is commonly used in web development as a means of representing structured data in a human-readable and machine-readable format."
+        "answer": [
+          {
+            "page": "page1",
+            "content": "JSON stands for JavaScript Object Notation."
+          },
+          {
+            "page": "page2",
+            "content": "It is a lightweight data-interchange format that is used for storing and exchanging data between a server and a client, or between different parts of a software application."
+          },
+          {
+            "page": "page3",
+            "content": "JSON is commonly used in web development as a means of representing structured data in a human-readable and machine-readable format."
+          }
+        ]
       },
       {
         "id": 4,
         "question": "How would you explain an API request?",
-        "answer": "An API request, or Application Programming Interface request, is a communication made by one software application (the client) to another (the server) to request specific data or perform a particular action. The client sends a request to the server using predefined rules and protocols, specifying the desired data or action. The server processes the request and sends a response back to the client, typically in a machine-readable format, such as JSON or XML. API requests are commonly used for integrating different software systems, allowing them to interact and exchange data in a standardized and controlled manner."
+        "answer": [
+          {
+            "page": "page1",
+            "content": "An API request, or Application Programming Interface request, is a communication made by one software application (the client) to another (the server) to request specific data or perform a particular action."
+          },
+          {
+            "page": "page2",
+            "content": "The client sends a request to the server using predefined rules and protocols, specifying the desired data or action."
+          },
+          {
+            "page": "page3",
+            "content": "The server processes the request and sends a response back to the client, typically in a machine-readable format, such as JSON or XML."
+          },
+          {
+            "page": "page4",
+            "content": "API requests are commonly used for integrating different software systems, allowing them to interact and exchange data in a standardized and controlled manner."
+          }
+        ]
       },
       {
         "id": 5,
         "question": "What is a DOM?",
-        "answer": "DOM stands for Document Object Model. It is a programming interface for web documents, represented as a tree-like structure of objects that can be manipulated using programming languages like JavaScript. The DOM represents the structure, content, and properties of a web document, allowing developers to dynamically update and manipulate its elements, such as HTML elements, CSS styles, and more. The DOM is a key concept in web development for building interactive and dynamic web pages and web applications."
+        "answer": [
+          {
+            "page": "page1",
+            "content": "DOM stands for Document Object Model."
+          },
+          {
+            "page": "page2",
+            "content": "It is a programming interface for web documents, represented as a tree-like structure of objects that can be manipulated using programming languages like JavaScript."
+          },
+          {
+            "page": "page3",
+            "content": "The DOM represents the structure, content, and properties of a web document, allowing developers to dynamically update and manipulate its elements, such as HTML elements, CSS styles, and more."
+          },
+          {
+            "page": "page4",
+            "content": "The DOM is a key concept in web development for building interactive and dynamic web pages and web applications."
+          }
+        ]
       },
       {
         "id": 6,
         "question": "In the context of CSS styling can you explain what does display-style: inline-block stand for?",
-        "answer": "The CSS property `display: inline-block` is used to define an element's display behavior in a web page. When applied to an HTML element, it causes the element to be displayed as an inline-level element, allowing other elements to flow alongside it, while also behaving like a block-level element in terms of its ability to have a defined width, height, padding, and margin. This makes `display: inline-block` useful for creating elements that are inline and block-like at the same time, allowing for more flexible and responsive layouts in CSS."
+        "answer": [
+          {
+            "page": "page1",
+            "content": "The CSS property `display: inline-block` is used to define an element's display behavior in a web page."
+          },
+          {
+            "page": "page2",
+            "content": "When applied to an HTML element, it causes the element to be displayed as an inline-level element, allowing other elements to flow alongside it, while also behaving like a block-level element in terms of its ability to have a defined width, height, padding, and margin."
+          },
+          {
+            "page": "page3",
+            "content": "This makes `display: inline-block` useful for creating elements that are inline and block-like at the same time, allowing for more flexible and responsive layouts in CSS."
+          }
+        ]
       },
       {
         "id": 7,

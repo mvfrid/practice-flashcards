@@ -1,6 +1,60 @@
 import React, { useState } from 'react';
+import FlashCardQuestion from './FlashCardQuestion.js';
+import FlashCardAnswer from './FlashCardAnswer.js';
+
+const FlashCard = ({ question, answer }) => {
+  const [showAnswer, setShowAnswer] = useState(false); // State for showing answer
+  const [showQuestion, setShowQuestion] = useState(true); // State for showing question
+
+  // Function to toggle showing answer
+  const toggleAnswer = () => {
+    setShowAnswer(!showAnswer);
+    setShowQuestion(false);
+    const cardElement = document.getElementById('flashcardA');
+    cardElement.classList.add('animate');
+    setTimeout(() => {
+      cardElement.classList.remove('animate');
+    }, 400); // Duration of the animation in milliseconds
+  };
+
+  // Function to go back to showing question
+  const goBackToQuestion = () => {
+    setShowAnswer(false);
+    setShowQuestion(true);
+    const cardElement = document.getElementById('flashcardQ');
+    cardElement.classList.add('animate-reverse');
+    setTimeout(() => {
+      cardElement.classList.remove('animate-reverse');
+    }, 400); // Duration of the animation in milliseconds
+  };
+
+  return (
+    <>
+      {showQuestion && (
+        <FlashCardQuestion
+          id="flashcardQ"
+          question={question}
+          toggleAnswer={toggleAnswer}
+          showQuestion={showQuestion} />
+      )}
+      {showAnswer && (
+        <FlashCardAnswer
+          id="flashcardA"
+          answer={answer}
+          goBackToQuestion={goBackToQuestion}
+          showAnswer={showAnswer} />
+      )}
+    </>
+  );
+};
+
+export default FlashCard;
+
+/*
+import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { StyledAnswerButton } from './styled_components/buttons.js';
+import { StyledAnswerButton } from '../styled_components/buttons.js';
+import { FlashCardAnswer } from './FlashCardAnswer.js'
 
 const flipVerticalRight = keyframes`
   0% {
@@ -109,7 +163,8 @@ const FlashCard = ({ question, answer }) => {
   };
 
   return (
-    <StyledCard id="flashcard" showAnswer={showAnswer} showQuestion={showQuestion} className={showAnswer ? 'animate' : 'animate-reverse'}>
+    <StyledCard id="flashcard" showAnswer={showAnswer} showQuestion={showQuestion}
+    className={showAnswer ? 'animate' : 'animate-reverse'}>
       {showQuestion && (
         <>
           <StyledH2>Question</StyledH2>
@@ -129,6 +184,7 @@ const FlashCard = ({ question, answer }) => {
             style={{ margin: '10px' }}>
                 See question
           </StyledAnswerButton>
+          <FlashCardAnswer />
         </>
       )}
     </StyledCard>
@@ -136,34 +192,4 @@ const FlashCard = ({ question, answer }) => {
 };
 
 export default FlashCard;
-
-/*
-  return (
-    <div className={showQuestion ? 'flip-vertical-right' : ''}>
-      <StyledCard showAnswer={showAnswer} showQuestion={showQuestion}>
-        {showQuestion && (
-          <div className={showQuestion ? 'flip-vertical-right' : ''}>
-            <StyledH2>Question</StyledH2>
-            <StyledH3>{question}</StyledH3>
-            <StyledAnswerButton type="button" onClick={toggleAnswer}>
-                See answer
-            </StyledAnswerButton>
-          </div>
-        )}
-        {showAnswer && (
-          <div className={showAnswer ? 'flip-vertical-right' : ''}>
-            <StyledH2>Answer</StyledH2>
-            <StyledP>{answer}</StyledP>
-            <StyledAnswerButton
-              type="button"
-              onClick={goBackToQuestion}
-              style={{ margin: '10px' }}>
-                See question
-            </StyledAnswerButton>
-          </div>
-        )}
-      </StyledCard>
-    </div>
-  );
-};
 */

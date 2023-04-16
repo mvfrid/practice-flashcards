@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FlashCard from './FlashCard';
+import FlashCard from './FlashCards/FlashCard';
 
 const StyledMain = styled.div`
   background-color: transparent;
@@ -11,17 +11,12 @@ const StyledMain = styled.div`
   position: relative;
   top: 0;
   left: 0;
-  margin: auto;
   width: 100%;
   height: 100%;
-  padding: 70px 25px;
-  @media (max-width: 667px) {
-    padding: 20px 10px;
-  }
+  padding: 50px 25px;
 `;
 
 const Main = (props) => {
-  console.log('props.randomQuestion', props.randomQuestion);
   return (
     <StyledMain>
       <FlashCard

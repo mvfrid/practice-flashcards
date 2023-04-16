@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import data from './data.json';
 
 import './index.css';
@@ -19,9 +19,8 @@ export const App = () => {
 
   return (
     <div className="App">
-      <Header />
+      <Header generateRandomNumber={generateRandomNumber} />
       <Main randomQuestion={data.questions[randomNumber]} />
-      <Footer generateRandomNumber={generateRandomNumber} />
     </div>
   );
 };
