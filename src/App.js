@@ -6,6 +6,18 @@ import data from './data.json';
 
 import './index.css';
 
+/* Ideas for questions:
+Modulus, patterns?
+Data types in JS
+Can you enumerate all JavaScript data types?
+What is NaN?
+List elements in HTML, ul, ol, etc.
+WCAG guidelines - arialabels?
+NPM package?
+What is Bootstrap? What is tailwind?
+What is boilerplate code?
+*/
+
 export const App = () => {
   const [randomNumber, setRandomNumber] = useState(0); // initialize with initial value of 0
   const [showQuestion, setShowQuestion] = useState(true); // State for showing question

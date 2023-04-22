@@ -266,15 +266,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "There are several ways to handle cross-origin resource sharing (CORS) in JavaScript. One way is to use server-side proxying, where the server acts as a middleman between the client and the remote server, making requests on behalf of the client. "
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Another way is to use JSONP, which involves creating a script tag that loads a script from the remote server that executes a callback function in the client. A newer approach is to use CORS headers, which allow servers to specify which origins are allowed to access their resources."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Each approach has its own security implications. Server-side proxying can introduce additional latency and create a single point of failure. JSONP can only be used with GET requests and can be vulnerable to cross-site scripting (XSS) attacks if the remote server is compromised. CORS headers can be misconfigured, leading to security vulnerabilities such as cross-site request forgery (CSRF) attacks."
           }
         ]
       },
@@ -302,15 +302,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Functional programming is a programming paradigm that emphasizes the use of pure functions, immutability, and higher-order functions. Pure functions are functions that always return the same output for a given input and have no side effects, making them easy to reason about and test."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Immutability refers to the concept of not modifying data directly but creating new copies of it instead. Higher-order functions are functions that take other functions as arguments or return functions as output, enabling powerful abstractions."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "In JavaScript, examples of higher-order functions include `map`, `filter`, and `reduce`. Immutability can be achieved through techniques such as `Object.freeze` and `spread syntax`. Pure functions can be created by avoiding side effects and using techniques like `currying` and `composition`."
           }
         ]
       },
@@ -320,15 +320,19 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "To handle performance optimization in JavaScript, you can use techniques such as debouncing, throttling, and memoization. Overall, these techniques can help improve the performance and responsiveness of JavaScript applications by reducing unnecessary function calls and optimizing expensive computations."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "Debouncing is a technique that delays the execution of a function until a certain amount of time has passed without the function being called again. This can be useful for reducing the number of times a function is called during rapid user interactions, such as scrolling or typing."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Throttling is a similar technique that limits the number of times a function can be called during a given time period. This can be useful for preventing excessive network requests or DOM updates."
+          },
+          {
+            "page": "page4",
+            "content": "Memoization is a technique that caches the results of a function so that subsequent calls with the same input can be returned from the cache instead of being recomputed. This can be useful for optimizing expensive computations or reducing redundant calculations in recursive functions."
           }
         ]
       },
@@ -338,51 +342,51 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "JavaScript has seven primitive data types: number (integers and floats), string, boolean, null, undefined, bigint, and symbol. In addition to these primitive types, JavaScript also has object types, which can hold collections of data and functions."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "To determine the type of a variable or value in JavaScript, you can use the `typeof` operator followed by the variable or value you want to check. This will return a string indicating the type of the variable or value. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "For example, `typeof 42` would return `number`, and `typeof 'hello'` would return `string`. Note that the `typeof` operator returns `object` for objects, arrays, and null, which can be further distinguished by checking their constructor or using other methods."
           }
         ]
       },
       {
         "id": 20,
-        "question": "How do you declare and use a function in JavaScript? Provide examples of function declaration and function expression syntax.",
+        "question": "What is promises in regards to JavaScript?",
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Promises in JavaScript are a way to handle asynchronous operations such as fetching data or making HTTP requests. A Promise is an object that represents the eventual completion or failure of an asynchronous operation and allows you to attach callbacks to be executed when the operation is completed or failed."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "The Promise object has three states: `pending`, `fulfilled`, and `rejected`. When a Promise is pending, the asynchronous operation is still in progress. When a Promise is fulfilled, the operation was completed successfully, and any attached success callbacks will be executed. When a Promise is rejected, the operation failed, and any attached error callbacks will be executed."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Promises are commonly used with the .then() and .catch() methods to attach success and error callbacks respectively. Promises can also be chained together using the .then() method to perform multiple asynchronous operations in sequence."
           }
         ]
       },
       {
         "id": 21,
-        "question": "How do you loop through an array in JavaScript? Provide examples of different types of loops, such as 'for', 'while', and 'forEach'.",
+        "question": "Explain what WCAG 2.1 is and discuss what measures you could take in your code to fulfill the demands.",
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "WCAG 2.1 is a set of guidelines created by the World Wide Web Consortium (W3C) that provide recommendations for making web content more accessible to people with disabilities. "
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "It includes updated guidelines and success criteria from WCAG 2.0, as well as new criteria to address mobile accessibility, low vision, and cognitive and learning disabilities. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "To fulfill the demands of WCAG 2.1, developers can take measures such as providing alternative text for images, using semantic HTML markup, providing captions and transcripts for audio and video content, ensuring keyboard accessibility, and designing with color contrast in mind."
           }
         ]
       },
@@ -392,15 +396,11 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, a callback function is a function that is passed as an argument to another function and is executed when a certain event occurs or when a task is completed. Callback functions are often used in asynchronous programming, where a task may take some time to complete, and the program needs to continue running while waiting for the task to finish."
           },
           {
             "page": "page2",
-            "content": ""
-          },
-          {
-            "page": "page3",
-            "content": ""
+            "content": "An example of using a callback function in asynchronous programming is with the setTimeout function, which delays the execution of a function for a certain amount of time. "
           }
         ]
       },
@@ -446,19 +446,15 @@
       },
       {
         "id": 24,
-        "question": "How do you find the length of an array in JavaScript?",
+        "question": "What is a NPM package?",
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "A NPM (Node Package Manager) package is a collection of files, code, and other resources that are published to the NPM registry and can be installed using the NPM package manager. These packages can be used to add functionality, libraries, and dependencies to a project or application built with Node.js or any other JavaScript-based technology."
           },
           {
             "page": "page2",
-            "content": ""
-          },
-          {
-            "page": "page3",
-            "content": ""
+            "content": "NPM packages can be created by developers and published to the public NPM registry for others to use, or kept private for internal use within an organization. They can be installed using the npm install command, and managed using the package.json file in the project directory. NPM packages have become a key component of modern web development, as they allow developers to easily share and reuse code and dependencies across projects."
           }
         ]
       },
@@ -468,15 +464,27 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "push: adds one or more elements to the end of an array."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "pop: removes the last element from an array."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "shift: removes the first element from an array."
+          },
+          {
+            "page": "page4",
+            "content": "unshift: adds one or more elements to the beginning of an array."
+          },
+          {
+            "page": "page5",
+            "content": "slice: returns a new array containing a portion of the original array."
+          },
+          {
+            "page": "page6",
+            "content": "splice: adds or removes elements from an array, and returns the removed elements."
           }
         ]
       },
@@ -486,15 +494,11 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, mutable arrays can be modified directly by changing the values at specific indices, which can have implications for code maintenance and state management. Immutability refers to the state of an array that cannot be changed once it is created. Immutable arrays can help improve code predictability and can simplify state management."
           },
           {
             "page": "page2",
-            "content": ""
-          },
-          {
-            "page": "page3",
-            "content": ""
+            "content": "To achieve immutability, you can use methods that return a new array rather than modifying the original one directly. For example, you can use the concat method to create a new array that contains the original elements and additional elements, or the map method to transform the original elements and return a new array."
           }
         ]
       },
@@ -504,15 +508,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Array destructuring is a technique in JavaScript that allows you to extract values from an array and assign them to variables in a single statement. This syntax can simplify code and improve readability, especially when working with complex data structures."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "For example, you can extract the first and second values from an array using the following destructuring syntax: "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "const numbers = [1, 2, 3]; const [first, second] = numbers; console.log(first); // Output: 1; console.log(second); // Output: 2"
           }
         ]
       },
@@ -522,15 +526,11 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, you can sort an array using the sort method, which modifies the original array in place by sorting its elements according to their string representations. You can also use the reverse method to reverse the order of the array elements."
           },
           {
             "page": "page2",
-            "content": ""
-          },
-          {
-            "page": "page3",
-            "content": ""
+            "content": "To sort an array based on a specific criteria, you can pass a compare function to the sort method. The compare function takes two arguments and returns a negative, zero, or positive value based on their relative order. "
           }
         ]
       },
@@ -540,15 +540,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, you can clone an array using various methods depending on whether you need a shallow or deep copy. A shallow copy creates a new array with the same references to the original array elements, while a deep copy creates a new array with copies of the original array elements."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "For a shallow copy, you can use the spread operator or the slice method. For a deep copy, you can use the JSON.parse and JSON.stringify methods, or a library like lodash or immer."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "The pros of shallow copying methods are that they are simple and fast, but the cons are that they do not create independent copies of nested objects or arrays. The pros of deep copying methods are that they create independent copies of all nested objects and arrays, but the cons are that they can be slower and more complex to implement."
           }
         ]
       },
@@ -558,15 +558,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In JavaScript, a multidimensional array is an array of arrays. It is used to represent data in multiple dimensions, such as a matrix or a grid. Each element of the array is an array itself, allowing data to be organized into rows and columns or even higher dimensions."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "For example, a 2D array can be used to represent a grid of values, such as a game board or a spreadsheet. A 3D array can be used to represent a cube of data, such as a 3D model or a weather simulation."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Example of a 2D array with 3 rows and 3 columns = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]. The values can be accessed using two indexes, such as matrix[1][2], which would return the value 6."
           }
         ]
       },
@@ -594,15 +594,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Redux is a predictable state container for JavaScript applications. It is used to manage the state of an application in a predictable and consistent way, especially in large and complex applications."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "The basic principles of Redux include the store, actions, reducers, and the unidirectional data flow. The store holds the state of the application, and is managed by the reducers, which handle the actions dispatched to the store. Actions are plain JavaScript objects that describe the changes that need to be made to the state. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "The unidirectional data flow ensures that the state of the application can only be modified by dispatching actions to the store, which then updates the state and triggers a re-rendering of the components that depend on the state."
           }
         ]
       },
@@ -612,15 +612,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In Redux, container components and presentational components are two different types of components that serve different purposes. Container components are responsible for connecting the Redux store to the component, and dispatching actions to the store. They are typically class-based components and are responsible for managing the state of the application."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "On the other hand, presentational components are responsible for rendering the UI based on the props that are passed to them. They are typically functional components that receive props from the container component and display the UI."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Container components interact with the store by mapping the state and dispatch functions to the props that are passed to the presentational components. This allows the presentational components to display the UI based on the state of the application, and allows the container components to dispatch actions to update the state in the store."
           }
         ]
       },
@@ -630,15 +630,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Middleware in Redux is a way to extend the functionality of the store dispatch function by intercepting actions before they reach the reducers. Middleware can be used for a variety of purposes, such as handling asynchronous actions, logging, and handling side effects."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "When an action is dispatched, it first goes through the middleware chain before reaching the reducers. Middleware can modify, reject, or dispatch additional actions based on the original action. This makes middleware an ideal place to handle asynchronous actions, such as making API requests, by allowing it to dispatch a new action when the request is complete."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "Middleware can also handle side effects, such as logging, by intercepting the action and performing the side effect before passing the action along the chain. This allows the middleware to keep the reducers pure and side-effect free, while still allowing for additional functionality to be added to the store dispatch process."
           }
         ]
       },
@@ -648,15 +648,19 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "To connect a React component to Redux, you can use the connect function from the react-redux library. The connect function takes two parameters: mapStateToProps and mapDispatchToProps."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "mapStateToProps maps the state from the Redux store to the component props. It returns an object with keys that represent the props you want to add to the component, and values that represent the corresponding state from the Redux store."
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "mapDispatchToProps maps the actions to the component props. It returns an object with keys that represent the props you want to add to the component, and values that represent the corresponding action creator functions from the Redux store."
+          },
+          {
+            "page": "page4",
+            "content": "The connect function then returns a new function that takes the component as its parameter. It wraps the component in a higher-order component (HOC) that passes the mapped state and actions to the component as props. This allows the component to access the Redux state and actions without needing to directly interact with the store or actions."
           }
         ]
       },
@@ -666,15 +670,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "Selectors in Redux are functions that are used to derive data from the Redux store in an efficient way. They are useful because they allow developers to extract specific data from the store and transform it in a way that makes it easier to use in the application. "
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "By selecting only the data that is needed and transforming it as necessary, selectors can help improve the performance of the application by reducing unnecessary rendering and computations. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "They also promote reusability by encapsulating the logic for deriving data, making it easier to reuse the same logic in different parts of the application. Overall, selectors are a powerful tool for building more efficient and maintainable Redux applications."
           }
         ]
       },
@@ -684,15 +688,15 @@
         "answer": [
           {
             "page": "page1",
-            "content": "Not finished..."
+            "content": "In Redux, immutability refers to the concept of never modifying the state directly but creating new copies of it instead. This is important for managing the state because it helps ensure that the state is predictable and can be easily tracked over time. By keeping a record of every change made to the state, it's possible to implement features like time-travel debugging and undo/redo."
           },
           {
             "page": "page2",
-            "content": ""
+            "content": "There are several approaches to update the state in a Redux store, including using the spread operator or the Object.assign method to create new copies of the state with the desired changes. Alternatively, developers can use libraries like Immutable.js, which provide data structures that are inherently immutable, making it easier to manage state updates. "
           },
           {
             "page": "page3",
-            "content": ""
+            "content": "These approaches help ensure that the state is always consistent and predictable, which is critical for building robust and maintainable applications."
           }
         ]
       },
@@ -1189,6 +1193,228 @@
           {
             "page": "page2",
             "content": "For example, if a font size is set on a parent element, its child elements will inherit the same font size unless a different font size is explicitly set on the child element. This can simplify and streamline the application of styles in CSS."
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "question": "What is cross-origin resource sharing (CORS) in JavaScript?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "Cross-Origin Resource Sharing (CORS) is a security feature implemented in web browsers that restricts client-side web applications, such as JavaScript running in a browser, from making requests to a different domain than the one that served the original web page. This is done to prevent malicious websites from accessing sensitive data from other domains without the user's knowledge or consent."
+          },
+          {
+            "page": "page2",
+            "content": "Without CORS, JavaScript running in a browser could make requests to any domain, potentially exposing sensitive data to attackers. CORS allows servers to specify which domains are allowed to access their resources by including specific headers in their responses to requests. When a client-side web application attempts to make a cross-origin request, the browser checks the server's CORS headers to determine whether the request is allowed."
+          }
+        ]
+      },
+      {
+        "id": 67,
+        "question": "What is boilerplate code?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "Boilerplate code refers to sections of code that are repeated in multiple places within a software application, with little or no variation. This code is necessary to set up the basic structure or framework of the application, but it does not directly contribute to the functionality of the application. "
+          },
+          {
+            "page": "page2",
+            "content": "Boilerplate code can be a useful starting point when creating a new application or module, but it can also be time-consuming and error-prone to write and maintain. Many software frameworks provide pre-written boilerplate code to help developers get started more quickly and reduce the amount of repetitive coding they have to do."
+          }
+        ]
+      },
+      {
+        "id": 68,
+        "question": "Within the context of React, what is the difference between controlled and uncontrolled forms?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "In JavaScript, forms can be either controlled or uncontrolled. Controlled forms are those where the form data is handled by the React component, which means that the state of the form is always in sync with the component's state. When a user enters data into a controlled form, the component's state is updated, which causes the form to re-render with the new data."
+          },
+          {
+            "page": "page2",
+            "content": "On the other hand, uncontrolled forms are those where the form data is handled by the browser, and the React component does not manage the form state. In this case, the data is stored in the DOM, and the component must extract the data from the DOM when it needs it."
+          },
+          {
+            "page": "page3",
+            "content": "Controlled forms offer better control and flexibility over the form data, allowing for easier validation and handling of form submission. However, they can also be more verbose and require more code to implement. Uncontrolled forms are simpler to implement but may not offer the same level of control over the form data."
+          }
+        ]
+      },
+      {
+        "id": 69,
+        "question": "What is NaN?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "NaN stands for `Not a Number` and is a value of the Number data type in JavaScript. It is a result of an operation that cannot produce a meaningful numeric result, such as dividing by zero, taking the square root of a negative number, or attempting to convert a non-numeric string to a number. "
+          },
+          {
+            "page": "page2",
+            "content": "NaN is considered a special value and is not equal to any other value, including itself. To check if a value is NaN, you can use the `isNaN()` function in JavaScript, which returns true if the value is NaN and false otherwise."
+          }
+        ]
+      },
+      {
+        "id": 70,
+        "question": "Explain the difference between `display: none` and `visibility: hidden` in CSS. ",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "The main difference between display: none and visibility: hidden in CSS is that display: none removes the element completely from the document flow, while visibility: hidden hides the element but still takes up space in the document flow."
+          },
+          {
+            "page": "page2",
+            "content": "In other words, an element with display: none is not rendered on the page, and its space is collapsed, while an element with visibility: hidden is still present on the page but not visible. "
+          },
+          {
+            "page": "page3",
+            "content": "This means that if an element is set to display: none, it cannot be interacted with or accessed by screen readers, while an element with visibility: hidden can still be interacted with and accessed by screen readers. "
+          }
+        ]
+      },
+      {
+        "id": 71,
+        "question": "Explain the difference between `position: relative` and `position: static` in CSS?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "In CSS, position: static is the default position value for an element, meaning it will appear in the normal document flow. Elements with position: relative are also positioned according to the normal document flow, but their position can be adjusted relative to their original position using the top, right, bottom, and left properties."
+          },
+          {
+            "page": "page2",
+            "content": "In other words, position: relative sets up a new position context for the element, allowing you to move it around relative to its original position, while position: static keeps the element in its original position with no further adjustments."
+          },
+          {
+            "page": "page3",
+            "content": "It's worth noting that if an element with position: relative is moved out of the normal document flow (for example, by setting float: left or position: absolute), it will still be positioned relative to its original position, not to its new position in the document flow."
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "question": "What is styled components?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "Styled components is a library for React and React Native that allows developers to write CSS in JavaScript. With styled components, you can define styles for your components directly in the same file where the component is defined, using a combination of JavaScript and CSS syntax."
+          },
+          {
+            "page": "page2",
+            "content": "This allows for greater encapsulation of styles and can make it easier to manage styles in larger projects. Additionally, styled components offer additional features like dynamic styling based on props, and they can be used to create reusable design systems. Overall, styled components provide a powerful and flexible way to manage styling in React and React Native projects."
+          }
+        ]
+      },
+      {
+        "id": 73,
+        "question": "What should you be careful with when executing a `while` loop?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "When executing a while loop in JavaScript, it is important to be careful with the condition that is used to control the loop. If the condition is not properly set up, the loop can become an infinite loop, which means that it will continue to run indefinitely and may cause the browser to freeze or crash."
+          },
+          {
+            "page": "page2",
+            "content": "To avoid infinite loops, you should ensure that the condition used in the while loop will eventually become false. You should also be careful not to modify the variables used in the condition inside the loop in a way that would prevent the condition from becoming false."
+          },
+          {
+            "page": "page3",
+            "content": "Additionally, you should ensure that the loop body contains a way to break out of the loop if necessary. This can be done using a break statement or by setting a flag variable that can be used to exit the loop."
+          }
+        ]
+      },
+      {
+        "id": 74,
+        "question": "Explain the main differences between `forEach` and `map` methods.",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "In JavaScript, map() and forEach() are both methods that can be used to iterate over arrays. However, there are some differences between the two:"
+          },
+          {
+            "page": "page2",
+            "content": "Return Value: map() returns a new array with the same length as the original array, while forEach() does not return anything."
+          },
+          {
+            "page": "page3",
+            "content": "Modifying the original array: map() does not modify the original array, while forEach() modifies the original array."
+          },
+          {
+            "page": "page4",
+            "content": "Callback function: map() expects a callback function to be passed, which is called for each element in the array, and the return value from the callback function is used to create a new array. forEach() also expects a callback function, but it is called for each element in the array without creating a new array."
+          },
+          {
+            "page": "page5",
+            "content": "Overall, map() is typically used when you want to create a new array based on the original array, while forEach() is typically used when you want to perform some operation on each element of the array without creating a new array."
+          }
+        ]
+      },
+      {
+        "id": 75,
+        "question": "Explain how a `for loop` works.",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "In JavaScript, a for loop is a control flow statement that allows you to repeatedly execute a block of code a specified number of times."
+          },
+          {
+            "page": "page2",
+            "content": "The syntax for a for loop includes three statements: an initialization statement that sets the loop counter to an initial value, a condition statement that specifies the condition for continuing the loop, and an update statement that modifies the loop counter after each iteration. "
+          },
+          {
+            "page": "page3",
+            "content": "The block of code inside the loop is executed for each iteration as long as the condition statement is true. Once the condition is false, the loop terminates and program control moves to the next statement after the loop. "
+          }
+        ]
+      },
+      {
+        "id": 76,
+        "question": "Could you tell me about different ways of writing list elements in HTML?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "There are several ways to write list elements in HTML, including:"
+          },
+          {
+            "page": "page2",
+            "content": "Unordered Lists: These are used to create a list of items with bullet points. They are created using the <ul> tag, with each item in the list represented by a <li> tag."
+          },
+          {
+            "page": "page3",
+            "content": "Ordered Lists: These are used to create a list of items with numbers or letters. They are created using the <ol> tag, with each item in the list represented by a <li> tag. "
+          },
+          {
+            "page": "page4",
+            "content": "Definition Lists: These are used to create a list of terms and their definitions. They are created using the <dl> tag, with each term represented by a <dt> tag and each definition represented by a <dd> tag. For example:"
+          }
+        ]
+      },
+      {
+        "id": 77,
+        "question": "What is ARIA and why is it used?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "ARIA stands for Accessible Rich Internet Applications. It is a set of attributes that can be added to HTML elements to help make web content more accessible to people with disabilities. ARIA provides additional information about the structure and functionality of web content, which can be used by assistive technologies such as screen readers to provide a better user experience for people with disabilities."
+          },
+          {
+            "page": "page2",
+            "content": "ARIA includes attributes such as role, which defines the type of widget or control, aria-label, which provides a text alternative for a non-text element, and aria-describedby, which references an element that describes the widget or control. By adding ARIA attributes to web content, developers can help ensure that users with disabilities have access to the same functionality and content as everyone else."
+          }
+        ]
+      },
+      {
+        "id": 78,
+        "question": "What is modulus and how could you use it in javaScript?",
+        "answer": [
+          {
+            "page": "page1",
+            "content": "The modulus operator in JavaScript, denoted by the % symbol, is used to get the remainder of a division operation between two numbers. For example, the expression x % y will give you the remainder when x is divided by y."
+          },
+          {
+            "page": "page2",
+            "content": "The modulus operator is particularly useful for checking if a number is even or odd, wrapping a counter at a certain value, and converting between different units of time (e.g. minutes to hours and minutes)."
           }
         ]
       }
